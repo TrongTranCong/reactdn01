@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//render hàm của react giúp tạo giao diện UI
+//có 2 tham số: nội dung UI,thẻ sẽ đc thêm nội dung
+// <App /> là một component do DEV tạo ra 
 
 ReactDOM.render(
   <React.StrictMode>
