@@ -1,12 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import HeaderClassComponent from './Components/HeaderClassComponent';
+import ProductFunctionComponents from './Components/ProductFunctionComponents';
+import HomeComponent from './Components/BaiTapComponent/HomeComponent';
+import DataBinding from './Components/DataBinding/DataBinding';
+import StyleComponent from './Components/StyleComponent/StyleComponent';
+import ClassComponent from './Components/HeaderClassComponent';
+import HandleEvent from './HandleEvent/HandleEvent';
+import StateDemo from './StateDemo/StateDemo';
+import ChangeFontSize from './StateDemo/ChangeFontSize';
 //JSX
 function App() {
+  //App là component main
   return (
+
     //chỉ được duy nhất 1 thẻ 
     <div className="App">
-        <h1>Hello React</h1>
+        {/* <StateDemo/> */}
+        <ChangeFontSize/>
+        {/* <HandleEvent/> */}
+        {/* <ProductFunctionComponents/> */}
+        {/* <HeaderClassComponent/> */}
+        {/* <HomeComponent/> */}
+        {/* <h1>Hello React</h1> */}
+        {/* sử dụng component */}
+        {/* <ClassComponent/> */}
+        {/* <DataBinding/> */}
+          {/* <StyleComponent/> */}
+        {/* <p className="text">App Component</p> */}
     </div>
+    
   );
 }
 

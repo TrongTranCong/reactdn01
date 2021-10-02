@@ -1,0 +1,12 @@
+.fontText{
+    font-size: 4rem;
+    text-align: center;
+    background-color: yellowgreen;
+    font-weight: 400;
+}
+.bg-Color{
+    background-color: lime;
+}
+.container__p{
+    font-weight: 700;
+}
