@@ -12,6 +12,8 @@ import StateDemo from './StateDemo/StateDemo';
 import ChangeFontSize from './StateDemo/ChangeFontSize';
 import StateDemo1 from './StateDemo/StateDemo1';
 import BaiTapChonXe from './assets/BaiTapChonXe/BaiTapChonXe';
+import RenderWithArray from './RenderWithArray/RenderWithArray';
+import HomePage from './Props/HomePage';
 //JSX
 function App() {
   //App là component main
@@ -19,7 +21,9 @@ function App() {
 
     //chỉ được duy nhất 1 thẻ 
     <div className="App">
-        <BaiTapChonXe/>
+        <HomePage/>
+        {/* <RenderWithArray/> */}
+        {/* <BaiTapChonXe/> */}
         {/* <StateDemo/> */}
         {/* <StateDemo1/> */}
         {/* <ChangeFontSize/> */}
