@@ -1,7 +1,8 @@
+/* Khai báo module giống kiểu đối tượng */
 .fontText{
     font-size: 4rem;
     text-align: center;
-    background-color: yellowgreen;
+    background-color: lightblue;
     font-weight: 400;
 }
 .bg-Color{

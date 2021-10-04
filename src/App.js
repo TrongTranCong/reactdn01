@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './assets/layout/header.css'
 import HeaderClassComponent from './Components/HeaderClassComponent';
 import ProductFunctionComponents from './Components/ProductFunctionComponents';
 import HomeComponent from './Components/BaiTapComponent/HomeComponent';
@@ -9,6 +10,8 @@ import ClassComponent from './Components/HeaderClassComponent';
 import HandleEvent from './HandleEvent/HandleEvent';
 import StateDemo from './StateDemo/StateDemo';
 import ChangeFontSize from './StateDemo/ChangeFontSize';
+import StateDemo1 from './StateDemo/StateDemo1';
+import BaiTapChonXe from './assets/BaiTapChonXe/BaiTapChonXe';
 //JSX
 function App() {
   //App là component main
@@ -16,8 +19,10 @@ function App() {
 
     //chỉ được duy nhất 1 thẻ 
     <div className="App">
+        <BaiTapChonXe/>
         {/* <StateDemo/> */}
-        <ChangeFontSize/>
+        {/* <StateDemo1/> */}
+        {/* <ChangeFontSize/> */}
         {/* <HandleEvent/> */}
         {/* <ProductFunctionComponents/> */}
         {/* <HeaderClassComponent/> */}

@@ -1,56 +1,16 @@
 import React, { Component } from 'react'
 
-export default class StateDemo extends Component {
-    //trạng thái đăng nhập user
+export default class StateDemo1 extends Component {
     //thuộc tính
-    //kiểm tra
-    // isLogin = false; //boolean
-    username = "Trọng Trần Công";
-    /**
-     *  State :
-     * - thuộc tính có sẵn của react class component
-     * - Công dụng: hàm setState
-     * + gán lại giá trị cho thuộc tính
-     * + chạy lại method render
-     */
-    
-    // kiểu giống object, đối tượng ban đầu state có sẵn của react
+    username = "kingala3010"
     state = {
-        isLogin: false,
+        isLogin: false
     }
-    //Method bên ngoài
     renderLogin = () => {
-        if (this.state.isLogin) {
-            //có thể viết nhiều dòng code
-            return <span className="text-white">{this.username}</span>
-        }
-        return <button className="btn btn-success" onClick={this.handleLogin}>Login</button>;
+        this.setState({ isLogin: true })
     }
-    //Click button login thì giá trị false --> true và hiển thị giao diện username đã login
-    handleLogin =  async() => {
-         //Xét lại isLogin dđể user click button mong đợi trả kết quả về true
-        // this.isLogin = true;
-        // console.log(this.isLogin);
-        //Đối tượng mới do mình khai báo
-       
-        let newState = {
-            isLogin: true,
-        }
-        //setState() là hàm bất đồng bộ nên có độ trễ
-        //Để dùng được hàm setState() thì phải chuyển biến muốn đổi giá trị trở thành thuộc tính của state
-        //anfn ra hàm arrow function
-        // this.setState(newState,() => {
-        //     console.log(this.state.isLogin);
-        // });
-        // console.log(this.state.isLogin);//false
-        await this.setState(newState);
-
-        console.log(this.state.isLogin);
-    }
-    // method render() bản chất chạy 1 lần rồi thôi và ko chạy lại
     render() {
         return (
-            //JSX của React
             <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <a className="navbar-brand" href="#">Navbar</a>
@@ -80,12 +40,11 @@ export default class StateDemo extends Component {
                                 <a className="nav-link disabled" href="#" tabIndex={-1} aria-disabled="true">Disabled</a>
                             </li>
                         </ul>
-                        {this.renderLogin()}
                         {/* Nội dung login */}
                         {/* Nếu isLogin == true hiện username, ngược lại hiện button login ?: */}
-                        {/* {this.isLogin ? <span className="text-white">{this.username}</span> : 
-                        <button className="btn btn-success">Login</button>
-                        } */}
+                        {this.state.isLogin ? <span className="text-white">{this.username}</span> :
+                            <button className="btn btn-success" onClick={this.renderLogin}>Login</button>
+                        }
                     </div>
                 </nav>
             </div>
