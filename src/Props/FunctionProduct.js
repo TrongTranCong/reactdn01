@@ -1,5 +1,5 @@
 import React from 'react'
-
+//truyền tham số props chứa đối tượng
 export default function FunctionProduct(props) {
     let {product} = props;
     return (

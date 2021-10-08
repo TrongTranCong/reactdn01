@@ -1,53 +1,50 @@
 import React, { Component } from 'react'
 
 export default class BaiTapChonXe extends Component {
-    //Thuộc tính
+    //thuộc tính
     state = {
-        imgCar:"./img/products/black-car.jpg"
+        imgCar: "./img/products/black-car.jpg",
     }
-    renderImg = (color) => {
-        //gán giá trị mới cho state
-        //Render lại UI
-        
+    changeColorCar = (color) => {
         this.setState({
-            imgCar:`./img/products/${color}-car.jpg` 
-    });
-}
+            //thuộc tính thay đổi
+            imgCar: `./img/products/${color}-car.jpg`
+        })
+    }
+
     render() {
         return (
-            <div className="container">
+            <div className="container py-5">
                 <div className="row">
-                    <div className="col-8">
-                        <h3>View</h3>
+                    <div className="col-7">
                         <img className="img-fluid" src={this.state.imgCar} alt="" />
                     </div>
-                    <div className="col-4 ">
-                        <h3>Exterior</h3>
+                    <div className="col-5">
                         <div className="row">
-                            <div className="col-4 mb-3 ">
+                            <div className="col-5 mb-3">
                                 <button className="btn btn-dark" onClick={() => {
-                                    this.renderImg("black");
+                                    this.changeColorCar("black")
                                 }}>Black</button>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-4 mb-3">
+                            <div className="col-5 mb-3">
                                 <button className="btn btn-secondary" onClick={() => {
-                                    this.renderImg("steel");
+                                    this.changeColorCar("steel")
                                 }}>Steel</button>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-4 mb-3">
+                            <div className="col-5 mb-3">
                                 <button className="btn btn-light" onClick={() => {
-                                    this.renderImg("silver");
+                                    this.changeColorCar("silver")
                                 }}>Silver</button>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-4 mb-3">
+                            <div className="col-5">
                                 <button className="btn btn-danger" onClick={() => {
-                                    this.renderImg("red");
+                                    this.changeColorCar("red")
                                 }}>Red</button>
                             </div>
                         </div>

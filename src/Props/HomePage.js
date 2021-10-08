@@ -1,3 +1,4 @@
+// Component cha
 import React, { Component } from 'react'
 import FunctionProduct from './FunctionProduct';
 import Product from './Product'
@@ -15,19 +16,21 @@ export default class HomePage extends Component {
                 <div className="row">
                     <div className="col-4">
                         {/* <Product nameCar="Black Car" price={1000} img="./img/products/black-car.jpg"/>  */}
-                        {/* <Product product= {this.productList[0]}/> */}
+                        {/* // nameCar là thuộc tính riêng của thẻ chính là props
+                        // Nhận giá trị vô là object */}
+                        {/* <Product product={this.productList[0]} /> */}
                         <FunctionProduct product= {this.productList[0]}/>
 
                     </div>
                     <div className="col-4">
                         {/* <Product nameCar="Red Car" price={1200} img="./img/products/red-car.jpg"/> */}
-                        {/* <Product product= {this.productList[1]}/> */}
+                        {/* <Product product={this.productList[1]} /> */}
                         <FunctionProduct product= {this.productList[2]}/>
 
                     </div>
                     <div className="col-4">
                         {/* <Product nameCar="Silver Car" price={1100} img="./img/products/silver-car.jpg"/> */}
-                        {/* <Product product= {this.productList[2]}/> */}
+                        {/* <Product product={this.productList[3]} /> */}
                         <FunctionProduct product= {this.productList[3]}/>
 
                     </div>

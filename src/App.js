@@ -14,6 +14,8 @@ import StateDemo1 from './StateDemo/StateDemo1';
 import BaiTapChonXe from './assets/BaiTapChonXe/BaiTapChonXe';
 import RenderWithArray from './RenderWithArray/RenderWithArray';
 import HomePage from './Props/HomePage';
+import BTXemChiTiet from './Props/BTXemChiTiet/BTXemChiTiet';
+import CarShop from './Props/CarShop/CarShop';
 //JSX
 function App() {
   //App là component main
@@ -21,7 +23,9 @@ function App() {
 
     //chỉ được duy nhất 1 thẻ 
     <div className="App">
-        <HomePage/>
+        <CarShop/>
+        {/* <BTXemChiTiet/> */}
+        {/* <HomePage/> */}
         {/* <RenderWithArray/> */}
         {/* <BaiTapChonXe/> */}
         {/* <StateDemo/> */}
