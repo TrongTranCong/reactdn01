@@ -1,9 +1,9 @@
+//component con
 import React, { Component } from 'react'
 
 export default class PhoneItem extends Component {
-
     render() {
-        let { sp, xemChiTiet } = this.props;
+        let {sp,xemChiTiet} = this.props;
         return (
             <div className="card">
                 <img src={sp.hinhAnh} className="card-img-top" alt="..." />
@@ -19,3 +19,4 @@ export default class PhoneItem extends Component {
         )
     }
 }
+

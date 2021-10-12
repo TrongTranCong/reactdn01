@@ -15,6 +15,9 @@ export default class Modal extends Component {
                         </div>
                         <div className="modal-body">
                             <img src={productDetail.img} className="img-fluid" alt="..." />
+                            <h5 className="modal-title" id="exampleModalLabel">{productDetail.price}</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">{productDetail.shortDescription}</h5>
+
                         </div>
                     </div>
                 </div>
